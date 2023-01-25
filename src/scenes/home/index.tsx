@@ -94,9 +94,9 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="h-[150px] flex w-full bg-primary-100 py-10 my-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between gap-8">
-              <img src={SponsorRedBull} alt="redbull-sponsor" />
-              <img src={SponsorForbes} alt="forbes-sponsor" />
-              <img src={SponsorFortune} alt="fortune-sponsor" />
+              <a href="https://www.redbull.com/" target='_blank'><img src={SponsorRedBull} alt="redbull-sponsor" /></a>
+              <a href="https://www.forbes.com/" target='_blank'><img src={SponsorForbes} alt="forbes-sponsor" /></a>
+              <a href="https://fortune.com/" target='_blank'><img src={SponsorFortune} alt="fortune-sponsor" /></a>
             </div>
           </div>
         </div>
