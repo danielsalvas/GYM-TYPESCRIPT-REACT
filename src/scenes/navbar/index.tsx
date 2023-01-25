@@ -36,21 +36,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                     page="Home" 
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link 
                     page="Benefits" 
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link 
                     page="Our Classes"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />               
                   <Link 
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />  
                 </div>
 
@@ -89,21 +93,25 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               page="Home" 
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />
             <Link 
               page="Benefits" 
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />
             <Link 
               page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />               
             <Link 
               page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+              setIsMenuToggled={setIsMenuToggled}
             />  
           </div>
         </div>
