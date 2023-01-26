@@ -33,7 +33,6 @@ const container = {
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
-    children: React.ReactNode
 }
 
 const Benefits = ({setSelectedPage}: Props) => {
