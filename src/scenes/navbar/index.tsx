@@ -78,45 +78,46 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
       {/* MOBILE MENU MODAL */}
       
-      {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl transition duration-200 ease-in-out">
-          {/* CLOSE ICON */}
-          <div className="flex justify-end p-12">
+      <div className={`fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl ${isMenuToggled ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
+            
+        {/* CLOSE BUTTON */}
+
+        <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-6 w-6 text-gray-400" />
             </button>
-          </div>
-
-          {/* MENU ITEMS */}
-          <div className='ml-[20%] flex flex-col gap-10 text-2xl'>
-            <Link 
-              page="Home" 
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled}
-            />
-            <Link 
-              page="Benefits" 
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled}
-            />
-            <Link 
-              page="Our Classes"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled}
-            />               
-            <Link 
-              page="Contact Us"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              setIsMenuToggled={setIsMenuToggled}
-            />  
-          </div>
         </div>
-      )}
-      
+
+        {/* MENU ITEMS */}
+        
+        <div className='ml-[20%] flex flex-col gap-10 text-2xl'>
+          <Link 
+            page="Home" 
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            setIsMenuToggled={setIsMenuToggled}
+          />
+          <Link 
+            page="Benefits" 
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            setIsMenuToggled={setIsMenuToggled}
+          />
+          <Link 
+            page="Our Classes"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            setIsMenuToggled={setIsMenuToggled}
+          />               
+          <Link 
+            page="Contact Us"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            setIsMenuToggled={setIsMenuToggled}
+          />  
+        </div>
+      </div>
+        
     </nav>
   )
 }
